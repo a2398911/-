@@ -1,0 +1,55 @@
+$colorBlue: #559AC8;
+$colorYellow: #F5D005;
+$colorPink: #FFA782;
+$colorPurple: #8A82CC;
+$colorGray: #4A4A4A;
+
+@mixin size($h,$w:$h) {
+  height: $h;
+  width: $w;
+}
+
+@mixin x-center(){
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin y-center() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin phone {
+  @media (min-width: 380px) {
+    @content;
+  }
+}
+@mixin pad-sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin pad-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin pc-sm {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin pc-md {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

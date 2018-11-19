@@ -1,0 +1,98 @@
+
+.header-img{
+  height: 380px;
+  max-width: 1140px;
+  background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/the-urban-landscape-1698285.png) top/cover no-repeat;
+  margin: auto;
+}
+.header-title{
+  @include x-center();
+  top: 89px;
+  color: white;
+  letter-spacing: 3.89px;
+  font-weight: 400;
+  text-align: center;
+}
+#selectArea{
+  @include size(48px,40.795%);
+  min-width: 200px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 5px;
+  color: $colorGray;
+  @include x-center();
+  top: 225px;
+}
+.hotArea{
+  z-index: 100;
+  @include size(auto,85%);
+  max-width: 800px;
+  min-height: 112px;
+  background-color: #fff;
+  @include x-center;
+  top: 352px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+  padding: 10px;
+}
+.hotArea-group{
+  text-align: center;
+}
+.hotArea-title{
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: $colorGray;
+}
+button{
+  @include size(auto,130px);
+  max-height: 42px;
+  padding: 8px 0;
+  border-radius: 5px;
+  margin: 8px;
+  color: #fff;
+  font-size: 16px;
+  @include pad-sm{
+    font-size: 20px;
+  }
+}
+.purple{
+  background-color: $colorPurple;
+  &:hover{
+    background-color: darken($colorPurple,10%);
+    transition: .3s;
+  }
+  &:active{
+    box-shadow: 0 0 0px 3px rgba($colorPurple,.5);
+  }
+}
+.pink{
+  background-color: $colorPink;
+  &:hover{
+    background-color: darken($colorPink,10%);
+    transition: .3s;
+  }
+  &:active{
+    box-shadow: 0 0 0px 3px rgba($colorPink,.5);
+  }
+}
+.yellow{
+  background-color: $colorYellow;
+  &:hover{
+    background-color: darken($colorYellow,5%);
+    transition: .3s;
+  }
+  &:active{
+    box-shadow: 0 0 0px 3px rgba($colorYellow,.5);
+  }
+}
+.blue{
+  background-color: $colorBlue;
+  &:hover{
+    background-color: darken($colorBlue,10%);
+    transition: .3s;
+  }
+  &:active{
+    box-shadow: 0 0 0px 3px rgba($colorBlue,.5);
+  }
+}

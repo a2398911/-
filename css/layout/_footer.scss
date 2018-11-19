@@ -1,0 +1,16 @@
+.footer{
+  max-width: 1140px;
+  background-color: $colorBlue;
+  @include size(90px,100%);
+  margin: auto;
+}
+.footer-text-group{
+  font-size: 14px;
+}
+.footer-title{
+  color: #fff;
+}
+.source{
+  margin-top: 10px;
+  color: $colorYellow;
+}

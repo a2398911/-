@@ -1,0 +1,82 @@
+.infoItem{
+  margin: auto;
+  @include pad-md{
+    width: 687px;
+  }
+  @include pc-sm{
+    width: 918px;
+  }
+  @include pc-md{
+    width: 965px;
+  }
+}
+.infoItem-box{
+  @include size(273px,100%);
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+  margin: 10px auto;
+  @include pad-md{
+    margin: 15px 8px;
+    width: 325px;
+  }
+  @include pc-sm{
+    width: 440px;
+  }
+  @include pc-md{
+    width: 464px;
+  }
+}
+.infoItem-img{
+  background: center/cover no-repeat;
+  @include size(155px,100%);
+}
+.infoItem-text{
+  height: 100%;
+  color: #fff;
+  padding: 0 20px;
+  padding-bottom: 15px;;
+}
+.infoItem-title{
+  font-size: 24px;
+  font-weight: 500;
+}
+.infoItem-data{
+  text-align: left;
+  margin-left: 20px;
+  height: 118px;
+  font-size: 14px;
+  @include pad-sm{
+    font-size: 16px;
+  }
+}
+.icon{
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  &::before{
+    content: '';
+    display: inline-block;
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png) center/contain no-repeat;
+    @include size(18px);
+    vertical-align: bottom;
+    margin-right: 8px;
+  }
+}
+.address{
+  margin: 10px 0;
+  &::before{
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png) center/contain no-repeat;
+  }
+}
+.phone{
+  &::before{
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png) center/contain no-repeat;
+  }
+}
+.freeVisit{
+  position: absolute;
+  bottom: 22px;
+  right: 25px;
+  font-weight: 500;
+  color: $colorGray;
+}

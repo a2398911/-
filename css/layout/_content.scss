@@ -1,0 +1,62 @@
+.content{
+  padding-top: 250px;
+  max-width: 1140px;
+  margin: auto;
+  background-color: #fff;
+  @include phone{
+    padding-top: 200px;
+  }
+  @include pc-sm{
+    padding-top: 140px;
+  }
+}
+.dashedLine{
+  border: 1px dashed $colorBlue;
+  margin-bottom: 50px;
+  &::before{
+    content: '';
+    @include center;
+    @include size(24px);
+    border-radius: 50%;
+    border: 2px solid $colorBlue;
+    background-color: #fff;
+  }
+  &::after{
+    content: '▼';
+    @include center;
+    font-size: 10px;
+    color: $colorBlue;
+  }
+}
+.content-title{
+  font-size: 28px;
+  color: $colorPurple;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  @include pad-md{
+    margin-bottom: 40px;
+    font-size: 38px;
+  }
+}
+
+.pageNumber{
+  margin: 20px 0 30px 0;
+  text-align: center;
+  font-size: 14px;
+  a{
+    margin: 0 10px;
+    color: $colorGray;
+  }
+  @include pad-md{
+    margin: 30px 0 50px 0;
+  }
+}
+.page.current{
+  color: $colorBlue;
+  pointer-events: none;
+}
+.disabled{
+  pointer-events: none;
+  opacity: .5;
+}
