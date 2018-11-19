@@ -503,11 +503,11 @@ select {
 
 html, body {
   height: 100%;
-  overflow: hidden;
 }
 
 .wrapper {
   background-color: #eee;
+  overflow: hidden;
 }
 
 /*!
