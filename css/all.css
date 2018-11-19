@@ -492,10 +492,10 @@ button:focus {
 }
 
 select {
-  border: 3px solid #ffffff;
-  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 3px;
   font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans TC','Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-appearance: none;
+  background: url(https://upload.cc/i1/2018/11/20/Z4ePAV.png) right/10% no-repeat;
 }
 
 .wrapper {
@@ -2714,6 +2714,8 @@ html {
 }
 
 #selectArea {
+  border: 3px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.7);
   height: 48px;
   width: 40.795%;
   min-width: 200px;
