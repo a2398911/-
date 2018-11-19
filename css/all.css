@@ -501,10 +501,6 @@ select {
   font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans TC','Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-html, body {
-  height: 100%;
-}
-
 .wrapper {
   background-color: #eee;
   overflow: hidden;
